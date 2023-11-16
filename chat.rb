@@ -4,7 +4,7 @@ require 'openai'
 
 # Configure the gem with your OpenAI API key
 OpenAI.configure do |config|
-  config.access_token = 'OPENAI_ACCESS_TOKEN'
+  config.access_token = OPENAI_ACCESS_TOKEN
 end
 
 # Function to initiate a chat with ChatGPT

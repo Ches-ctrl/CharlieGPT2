@@ -1,10 +1,13 @@
 # chat_with_gpt.rb
 
 require 'openai'
+require 'dotenv'
+
+Dotenv.load('key.env')
 
 # Configure the gem with your OpenAI API key
 OpenAI.configure do |config|
-  config.access_token = 'OPENAI_ACCESS_TOKEN'
+  config.access_token = ENV['OPENAI_ACCESS_TOKEN']
 end
 
 # Function to initiate a chat with ChatGPT
